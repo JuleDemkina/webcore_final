@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="head">
+        <!-- Блок слева -->
+        <div class="head__left">
+          <button class="head__button">
+            <img src="image/header/burger.svg" alt="Меню" />
+          </button>
+          <div class="head__divider"></div>
+          <img src="image/header/Group.svg" alt="Логотип" />
+        </div>
+        <!-- Блок справа -->
+        <div class="head__right">
+          <!-- Блок со способами связи -->
+          <div class="head__message head__message--margin">
+            <button class="head__button">
+              <img src="./image/header/call.svg" alt="Позвонить" />
+            </button>
+            <button class="head__button">
+              <img src="./image/header/chat.svg" alt="Оставить сообщение" />
+            </button>
+            <button class="head__button">
+              <img src="image/header/profile.svg" alt="Личный профиль" />
+            </button>
+          </div>
+          <!-- Блок о ремонте -->
+
+          <div class="head_repair-inform">
+            <div class="head__divider"></div>
+            <button class="head__button head__button--divider">
+              <img src="image/header/repair.svg" alt="Заявка на ремонт" />
+            </button>
+            <button class="head__button">
+              <img
+                src="image/header/checkstatus.svg"
+                alt="Проверить статус заявки"
+              />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="shadow"></div>
+    </header>
+
+    <!-- Основное содержание -->
+    <main>
+      <div class="main__title title">
+        <div class="title__highlight">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="4"
+            height="40"
+            viewBox="0 0 4 40"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z"
+              fill="#41F6D7"
+            />
+          </svg>
+        </div>
+
+        <h1 class="title__h1 title__h1--margin">Услуги и сервисы</h1>
+
+        <!-- Оставить заявку. Большой экран -->
+        <div class="head_repair-inform head_repair-inform--hide">
+          <p class="button--text">Оставить заявку</p>
+          <button class="head__button head__button--repair">
+            <img src="image/header/repair.svg" alt="Заявка на ремонт" />
+          </button>
+          <p class="button--text">Статус ремонта</p>
+          <button class="head__button">
+            <img
+              src="image/header/checkstatus.svg"
+              alt="Проверить статус заявки"
+            />
+          </button>
+        </div>
+      </div>
+
+      <!-- Слайд меню -->
+      <nav class="main__nav">
+        <ul class="main__information information">
+          <li class="information_li">
+            <button class="information__button">
+              Ремонтируемые устройства
+            </button>
+          </li>
+          <li class="information_li">
+            <button class="information__button">Ремонтируемые бренды</button>
+          </li>
+          <li class="information_li">
+            <button class="information__button">Дополнительные услуги</button>
+          </li>
+          <li class="information_li">
+            <button class="information__button">Цены на услуги</button>
+          </li>
+          <li class="information_li">
+            <button class="information__button">
+              Адреса сервисных центров
+            </button>
+          </li>
+          <li class="information_li">
+            <button class="information__button">Специальные цены</button>
+          </li>
+          <li class="information_li">
+            <button class="information__button">Отзывы</button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="section1">
+        <section class="about-us">
+          <p class="about-us__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <p class="about-us__text about-us__text--hide">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера<span class="about-us__text about-us__text--hide2"
+              >, что подтверждает большое количество постоянных клиентов. Мы
+              гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </span>
+          </p>
+
+          <button class="read-more">
+            <img class="read-more__img" src="image/expand.svg" alt="" />
+            <p class="read-more__text button--text">Читать далее</p>
+          </button>
+        </section>
+        <div class="img">
+          <img
+            class="img__main"
+            src="image/logo2.jpg"
+            alt="Логотип организации"
+            style="min-width: 320px"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
