@@ -21,6 +21,7 @@ module.exports = {
         clean: true,
         filename: '[name].[contenthash].js',
         assetModuleFilename: 'assets/[name][ext]',
+        publicPath: "/webpack-demo/",
       },
       plugins: [
         new HtmlWebpackPlugin({
