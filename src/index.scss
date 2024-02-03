@@ -1,8 +1,28 @@
 @import "libs/normalize";
+// @import "style/swiper-bundle.min";
 @import "style/fonts";
 @import "style/var";
-@import "style/style";
-@import "style/_head";
+@import "style/_body";
+@import "style/_button_main";
+// @import "style/section-feedback";
+@import "style/modal";
+@import "style/header";
+@import "style/contacts";
+@import "style/_main";
+@import "style/read-more";
+// @import "style/swiper";
+@import "style/_aside";
+
+@import "style/agreement";
+@import 'swiper/css';
+@import "style/swipe";
+@import "style/section-brends";
+@import "style/section-price";
+@import "style/section-type";
+
+
+
+
 
 
 

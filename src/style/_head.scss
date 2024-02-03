@@ -1,101 +1,14 @@
 
-  
-  body {
-    margin: 0;
-    min-width: 320px;
-    background: #f8f8f8;
-  }
-  header {
-    background: #ffffff;
-  }
-  nav.head {
-    box-sizing: border-box;
-    padding: 16px;
-    min-width: 320px;
-    height: 88px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  /* Блок слева */
-  .head__left {
-    height: 40px;
-    width: 154px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-  }
-  
   .head__left > .head__divider {
     display: none;
   }
+ 
   
-  /* Блок справа */
-  .head__right {
-    display: flex;
-  }
-  
-  /* Блок со способами связи */
-  .head__message {
-    display: flex;
-    justify-content: space-between;
-    display: none;
-  }
+ 
   .head__message--margin {
     margin-right: 20px;
   }
-  /* Блок о ремонте */
-  .head_repair-inform {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   
-  .head__button {
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
-    padding: 0;
-    background-color: #ff3e79;
-    border: none;
-    text-align: center;
-    margin: 0;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .head__button:not(:last-child) {
-    margin-right: 16px;
-  }
-  
-  .head__button:focus,
-  .head__button:hover {
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  }
-  
-  .head__button:focus {
-    border: 2px solid #cc1a4f8c;
-  }
-  
-  /* Разделитель */
-  .head__divider {
-    width: 2px;
-    height: 32px;
-    border-radius: 1px;
-    flex-shrink: 0;
-    background: #eaeaea;
-    margin-right: 20px;
-  }
-  /* Тень под шапкой */
-  .shadow {
-    width: 320px;
-    height: 1px;
-    flex-shrink: 0;
-    background: #d9fff5;
-  }
   
   /* Основное содержание*/
   main {
@@ -129,53 +42,7 @@
   .head_repair-inform--hide {
     display: none;
   }
-  
-  /* Слайд меню */
-  ul.information {
-    padding: 0;
-    margin: 0;
-    margin-left: 16px;
-    box-sizing: content-box;
-    height: 80%;
-    margin-top: 24px;
-  }
-  
-  .information {
-    display: flex;
-    overflow: auto;
-  }
-  
-  .information_li {
-    list-style-type: none;
-    margin-bottom: 0;
-  }
-  
-  .information__button {
-    height: 40px;
-    white-space: nowrap;
-    background: none;
-    border: none;
-    color: #7e7e82;
-    font-family: TT Lakes;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: -0.2px;
-    border: 2px solid transparent;
-    cursor: pointer;
-  }
-  
-  .information__button:focus,
-  .information__button:hover {
-    border-radius: 6px;
-    border: 2px solid #b8ffec;
-    background: #fff;
-  }
-  
-  .information__button:focus {
-    background: #b8ffeca6;
-  }
+
   
   /* Статья */
   .section1 {
@@ -201,28 +68,6 @@
     font-size: 0;
   }
   
-  .read-more {
-    display: flex;
-    align-items: center;
-    width: 140px;
-  
-    height: 24px;
-    padding: 0;
-    border: none;
-    background: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-bottom: 16px;
-  }
-  
-  .read-more:focus,
-  .read-more:hover {
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  }
-  
-  .read-more:focus {
-    border: 2px solid #d9fff5;
-  }
   
   .button--text {
     color: #1b1c21;
@@ -293,19 +138,7 @@
   
   /* Устройства с большим экраном ( 1120px и выше) */
   @media (min-width: 1120px) {
-    header {
-      display: none;
-    }
-  
-    .head_repair-inform--hide {
-      display: flex;
-      margin-left: auto;
-      margin-right: 32px;
-    }
-  
-    .head_repair-inform--hide > .button--text {
-      margin-right: 8px;
-    }
+   
   
     .main__information {
       flex-wrap: wrap;

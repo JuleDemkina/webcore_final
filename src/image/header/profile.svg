@@ -1,6 +1,6 @@
 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="ic/profile">
-<rect id="back" width="40" height="40" rx="20" fill="none"/>
+<rect id="back" width="40" height="40" rx="20" fill="#FF3E79"/>
 <g id="Group">
 <g id="Group 2">
 <path id="Oval" d="M20.5 19C22.9853 19 25 16.9853 25 14.5C25 12.0147 22.9853 10 20.5 10C18.0147 10 16 12.0147 16 14.5C16 16.9853 18.0147 19 20.5 19Z" fill="white"/>

@@ -1,0 +1,46 @@
+.button-main {
+  background: transparent;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  position: inherit;
+  flex-shrink: 0;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+  
+  &:focus {
+  }
+
+  &--with-text {
+    width: auto;
+    border-radius: 0;
+  }
+
+  &__text {
+  margin-right: 8px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  }
+
+  
+}

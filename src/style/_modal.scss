@@ -1,0 +1,125 @@
+.modal {
+position: fixed;  
+right: -150%;
+z-index: 3;
+width: 320px;
+height: 100vh;
+background:$color-white ;
+box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+padding: 24px 16px;
+transition: right 500ms ease-in-out;
+
+
+
+  @media (min-width: 360px) { 
+  width: 360px;
+  
+  }
+  @media (min-width: 1440px) { 
+  width: 440px;
+  padding: 24px 32px;
+  }
+
+  &__form{
+  display: flex;
+  flex-direction: column;
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    
+  }
+
+  &__input {
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid $color-stroke-grey;
+  // background: $color-white;
+  padding: 0 16px;
+
+    &--textarea{
+    height: 118px;
+    padding: 16px;
+
+    }
+  }
+
+  
+} 
+
+.modal-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+
+    &::before {
+    @extend %highlight;
+    top: 0px;
+    left: -16px;
+    margin-left: 0px;
+    padding-top: 0px;
+    }
+    @media (min-width: 1440px) {
+      &::before{
+        left: -33px;
+      }
+    }
+
+  }
+
+  .modal-close{
+    position: static;
+  
+    @media (min-width: 768px) { 
+    position: absolute;
+    left: -60px;
+    top: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color-main-pink;
+    }
+  }
+
+  .modal-submit{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: flex-end;
+  width: 136px;
+  height: 32px;
+  border-radius: 16px;
+  background: #FF3E79;
+  flex-shrink: 0;
+  color: $color-white;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 200% */
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  padding: 4px;
+  position: relative;
+  left: 0;
+  }
+
+  .callback {
+    &--open {
+      right: 0;
+    }
+  }
+ 
+  .feedback {
+    
+    &--open {
+      right: 0;
+    }
+  }

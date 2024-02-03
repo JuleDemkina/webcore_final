@@ -1,0 +1,30 @@
+.read-more {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  overflow: hidden;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 16px 0;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  &:focus {
+    border: 2px solid #d9fff5;
+  }
+
+  &__img {
+    transition: 0.8s;
+  }
+  &__img--rotate {
+    transform: rotate(180deg);
+    transition: 0.8s;
+  }
+}
