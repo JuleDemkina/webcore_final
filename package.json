@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://JuleDemkina.gitgub.io/webcore_final",
+  "homepage": "https://JuleDemkina.github.io/webcore_final",
   "scripts": {
-    "start": "webpack serve",
-    "build-dev": "webpack",
-    "build-prod": "webpack --node-env=production",
-    "clear": "rd /s /q dist",
+    "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "webpack --mode production && gh-pages -d dist/",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "watch": "webpack --mode development --watch"
   },
   "keywords": [],
   "author": "",
